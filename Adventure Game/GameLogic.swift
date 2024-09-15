@@ -172,14 +172,13 @@ class GameLogic: ObservableObject {
         }    }
 
     func displayHelp(context: AdventureGameContext) {
-        func displayHelp(context: AdventureGameContext) {
-            context.write("""
-            Available commands:
-            - Movement: north, south, east, west
-            - Actions: look, take [item], use [item], inventory
-            - help: Displays this help message
-            """)
-        }    }
+        context.write("""
+        Available commands:
+        - Movement: north, south, east, west
+        - Actions: look, take [item], use [item], inventory
+        - help: Displays this help message
+        """)
+    }
 
     func describeCurrentLocation(context: AdventureGameContext) {
         context.write("\nYou are at the \(currentLocation.name).")
